@@ -1,11 +1,17 @@
 package com.example.cuemeapp
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import com.example.cuemeapp.ui.theme.CueMeAppTheme
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContent {
+            CueMeAppTheme {
+                HomeScreen()
+            }
+        }
     }
 }

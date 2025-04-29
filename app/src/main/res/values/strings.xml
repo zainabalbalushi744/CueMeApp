@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CueMeApp</string>
+    <string name="title_activity_cue_message">CueMessageActivity</string>
 </resources>
